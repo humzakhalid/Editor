@@ -41,6 +41,7 @@ import ProjectExporter from './project/project-exporter';
 import CodeProjectEditorFactory from './project/project-code-editor';
 
 import Tools from './tools/tools';
+import Assembly from './tools/assembly';
 import DefaultScene from './tools/default-scene';
 import UndoRedo from './tools/undo-redo';
 import Request from './tools/request';
@@ -268,6 +269,10 @@ export default class Editor implements IUpdatable {
             const theme = <ThemeType> localStorage.getItem('babylonjs-editor-theme-name');
             ThemeSwitcher.ThemeName = theme || 'Light';
         }
+
+        // Web Assembly
+        if (Tools.IsWebAssemblySupported())
+            Assembly.Init();
     }
 
     /**

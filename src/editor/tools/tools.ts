@@ -337,4 +337,11 @@ export default class Tools {
             return false;
         }
     }
+
+    /**
+     * Returns if Web Assembly is supported in the current browser
+     */
+    public static IsWebAssemblySupported (): boolean {
+        return window['WebAssembly'] !== undefined;
+    }
 }

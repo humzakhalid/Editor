@@ -263,6 +263,10 @@ declare module 'babylonjs-editor/editor/tools/tools' {
                 * is supported
                 */
             static isFileApiSupported(showAlert?: boolean): boolean;
+            /**
+                * Returns if Web Assembly is supported in the current browser
+                */
+            static IsWebAssemblySupported(): boolean;
     }
 }
 

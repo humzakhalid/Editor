@@ -15,7 +15,8 @@
       "w2ui",
       "jquery",
       "socket.io-client",
-      "jstree"
+      "jstree",
+      "webassembly-js-api"
     ],
     "lib": [
       "es2015.promise",
@@ -31,6 +32,7 @@
     "./index.d.ts",
     "./babylonjs-editor-extensions.d.ts",
     "electron",
+    "assembly",
     "electron-packages",
     "assets"
   ]
